@@ -6,7 +6,7 @@
 > 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
 
 > 示例：
->> 给定 nums = [2, 7, 11, 15], target = 9	
+>> 给定 nums = [2, 7, 11, 15], target = 9
 >> 因为 nums[0] + nums[1] = 2 + 7 = 9
 >> 所以返回 [0, 1]
 
@@ -73,7 +73,7 @@ class Solution:
 
 > 示例1 :
 >> 输入: "abcabcbb"
->> 输出: 3 
+>> 输出: 3
 >> 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
 
 > 示例2 :
@@ -111,7 +111,7 @@ class Solution:
 > 你可以假设 nums1 和 nums2 不会同时为空。
 
 > 示例1 :
->> nums1 = [1, 3] 
+>> nums1 = [1, 3]
 >> nums2 = [2]
 >> 则中位数是 2.0
 
@@ -121,7 +121,7 @@ class Solution:
 >> 则中位数是 (2 + 3)/2 = 2.5
 
 **思路：**
-	- 合并两个数组，取中间的数，时间复杂度(最坏)：$ O(nlog(n)) $，空间复杂度：$ O(m+n) $ 
+	- 合并两个数组，取中间的数，时间复杂度(最坏)：$ O(nlog(n)) $，空间复杂度：$ O(m+n) $
 	- 双指针+二分法
 
 **代码：**
@@ -144,7 +144,7 @@ class Solution:
             else:
                 right = m1
         m1 = left
-        m2 = k - m1 
+        m2 = k - m1
         c1 = max(nums1[m1-1] if m1 > 0 else float("-inf"), nums2[m2-1] if m2 > 0 else float("-inf") )
         if (n1 + n2) % 2 == 1:
             return c1
@@ -231,7 +231,7 @@ class Solution:
                 situ = not situ
             t = m(situ, t)
         return ''.join([''.join(n) for n in a])
-    
+
 # 判断是否需要转向
 def m(situ, a):
     if situ:
