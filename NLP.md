@@ -190,3 +190,10 @@
 
 ### 6. 自动文章分级(Automatic Essay Grading)
 > 给定一篇文章，对文章的质量进行打分或分级
+
+---
+---
+BERT
+1.attention
+2.transformer
+3.bert
